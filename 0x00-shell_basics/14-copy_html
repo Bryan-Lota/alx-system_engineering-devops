@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -av --update --include='*.html' --exclude='*' "$(pwd)/" "/tmp/"
+rsync -av --update --include='*.html' --exclude='*' "$(pwd)/" "/tmp/"; ls -l "/tmp/file_0.html"
