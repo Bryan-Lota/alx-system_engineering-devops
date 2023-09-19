@@ -1,7 +1,2 @@
 #!/bin/bash
-# Define the source directory (current directory)
-src_dir=$(pwd)
-# Define the destination directory (parent directory)
-dest_dir=$(dirname $src_dir)
-# Use rsync to copy HTML files from source to destination
-rsync -av --update --exclude='*' --include='*.html' "$src_dir/" "$dest_dir/"
+rsync -av --update --exclude='*' --include='*.html' "$(pwd)/" "$(dirname "$(pwd)")/"
