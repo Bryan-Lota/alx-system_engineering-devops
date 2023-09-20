@@ -1,13 +1,2 @@
 #!/bin/bash
-# List files in the current directory (./)
-echo "Listing files in the current directory:"
-ls -la
-# Change to the parent directory (../) and list files
-cd ..
-echo "Listing files in the parent directory:"
-ls -la
-# Change to the /boot directory and list files
-cd /boot
-echo "Listing files in the /boot directory:"
-ls -la
-
+ls -al . .. /boot
